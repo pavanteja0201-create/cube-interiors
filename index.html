@@ -1,0 +1,776 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Cube Interiors - Premium, minimal, and modern home interior design company in India. Designing luxury modular kitchens, bedrooms, living rooms, and offices.">
+    <title>Cube Interiors | Modern & Luxury Home Interior Design India</title>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- CSS stylesheet -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- Header / Navbar -->
+    <header class="site-header">
+        <div class="container header-container">
+            <a href="#" class="logo-link" id="logo">
+                <div class="logo-wrapper">
+                    <!-- Premium 3D Isometric Cube Logo SVG -->
+                    <svg class="logo-svg" viewBox="0 0 100 100" width="48" height="48" xmlns="http://www.w3.org/2000/svg">
+                        <!-- Outer Hexagon Frame Faces -->
+                        <!-- Top Face -->
+                        <polygon points="50,12 80,29 50,46 20,29" fill="#4A4A4A" />
+                        <!-- Left Face -->
+                        <polygon points="20,29 50,46 50,80 20,63" fill="#2E2E2E" />
+                        <!-- Right Face -->
+                        <polygon points="50,46 80,29 80,63 50,80" fill="#1C1C1C" />
+                        
+                        <!-- Inner Orange Cube (Floating Isometric Cube) -->
+                        <!-- Top Face (Yellowish Orange) -->
+                        <polygon points="50,32 64,40 50,48 36,40" fill="#FFA726" />
+                        <!-- Left Face (Medium Orange) -->
+                        <polygon points="36,40 50,48 50,64 36,56" fill="#FB8C00" />
+                        <!-- Right Face (Deep Orange Accent) -->
+                        <polygon points="50,48 64,40 64,56 50,64" fill="#E05A00" />
+
+                        <!-- Hexagonal border overlay for sharp premium finish -->
+                        <polygon points="50,12 80,29 80,63 50,80 20,63 20,29" fill="none" stroke="#D4AF37" stroke-width="1.5" stroke-linejoin="round"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="brand-cube">CUBE</span>
+                        <span class="brand-interiors">INTERIORS</span>
+                    </div>
+                </div>
+            </a>
+
+            <!-- Mobile Nav Toggle -->
+            <button class="nav-toggle" aria-label="Toggle Navigation" id="navToggle">
+                <span class="hamburger"></span>
+            </button>
+
+            <!-- Nav Links -->
+            <nav class="nav-menu" id="navMenu">
+                <ul>
+                    <li><a href="#" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#services" class="nav-link">Services</a></li>
+                    <li><a href="#portfolio" class="nav-link">Portfolio</a></li>
+                    <li><a href="#why-choose-us" class="nav-link">Why Us</a></li>
+                    <li><a href="#process" class="nav-link">Process</a></li>
+                    <li><a href="#testimonials" class="nav-link">Testimonials</a></li>
+                    <li><a href="#contact" class="nav-link contact-btn-mobile">Get a Quote</a></li>
+                </ul>
+            </nav>
+
+            <a href="#contact" class="btn-gold-outline header-cta-btn">Get Free Quote</a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-section">
+        <div class="hero-bg-overlay"></div>
+        <div class="container hero-container">
+            <div class="hero-content scroll-reveal">
+                <span class="hero-tag">Luxurious &bull; Minimalist &bull; Bespoke</span>
+                <h1 class="hero-title">Crafting Modern Indian Homes With Elegance & Precision</h1>
+                <p class="hero-subtitle">Transform your space into a premium sanctuary. Bespoke modular kitchens, luxury bedrooms, and smart layouts designed for modern living.</p>
+                <div class="hero-actions">
+                    <a href="#contact" class="btn-gold-solid">Book Free Consultation</a>
+                    <a href="#portfolio" class="btn-white-outline">Explore Designs</a>
+                </div>
+            </div>
+
+            <!-- Floating Trust Badges at Bottom of Hero -->
+            <div class="hero-badges scroll-reveal delay-1">
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                            <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h3>10 Year</h3>
+                        <p>Material Warranty</p>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                            <circle cx="12" cy="12" r="10"/>
+                            <polyline points="12 6 12 12 16 14"/>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h3>45 Days</h3>
+                        <p>On-Time Delivery</p>
+                    </div>
+                </div>
+                <div class="badge-item">
+                    <div class="badge-icon">
+                        <svg viewBox="0 0 24 24" width="28" height="28" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                            <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/>
+                            <polyline points="9 22 9 12 15 12 15 22"/>
+                        </svg>
+                    </div>
+                    <div class="badge-info">
+                        <h3>1500+</h3>
+                        <p>Homes Handed Over</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="grid-2">
+                <div class="about-image-wrapper scroll-reveal">
+                    <div class="image-border-decoration"></div>
+                    <img src="assets/images/hero_living.png" alt="Premium Modern Living Room by Cube Interiors" class="about-img">
+                    <div class="experience-card">
+                        <span class="experience-num">12+</span>
+                        <span class="experience-text">Years of Crafting Luxury</span>
+                    </div>
+                </div>
+                <div class="about-content-wrapper scroll-reveal delay-1">
+                    <span class="section-tag">About Cube Interiors</span>
+                    <h2 class="section-title">Where Indian Heritage Meets Modern Architecture</h2>
+                    <p class="section-desc">At Cube Interiors, we believe that luxury is not about being flashy; it is about thoughtful details, functional sophistication, and premium materials that last a lifetime.</p>
+                    <p class="section-desc">We tailor high-end villa and apartment interiors to suit the lifestyle of modern Indian families. By combining cutting-edge German manufacturing precision with regional space optimization, we deliver gorgeous modular kitchens, premium closets, and elegant living spaces that reflect who you are.</p>
+                    
+                    <div class="about-features">
+                        <div class="about-feat-item">
+                            <span class="feat-bullet"></span>
+                            <div>
+                                <h4>Tailor-made Designs</h4>
+                                <p>Customized to fit your room layouts and aesthetic preferences.</p>
+                            </div>
+                        </div>
+                        <div class="about-feat-item">
+                            <span class="feat-bullet"></span>
+                            <div>
+                                <h4>German-engineered Hardware</h4>
+                                <p>Fitted with premium soft-close hinges, channels, and organizers.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <a href="#contact" class="btn-gold-solid">Talk to Our Designer</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-tag">Our Expertise</span>
+                <h2 class="section-title">Luxury Services Tailored For Your Home</h2>
+                <p class="section-subtitle">From modular furniture units to complete end-to-end villa makeovers, we create spaces that define functional luxury.</p>
+            </div>
+
+            <div class="services-grid scroll-reveal">
+                <!-- Service 1: Modular Kitchen -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="assets/images/modular_kitchen_dining.png" alt="Luxury Modular Kitchen" class="service-img">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-icon-box">
+                            <!-- Custom Kitchen Icon SVG -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                                <rect x="3" y="3" width="18" height="18" rx="2" ry="2"/>
+                                <line x1="9" y1="3" x2="9" y2="21"/>
+                                <line x1="3" y1="12" x2="21" y2="12"/>
+                                <circle cx="6" cy="7.5" r="1"/>
+                                <circle cx="15" cy="7.5" r="1.5"/>
+                            </svg>
+                        </div>
+                        <h3>Modular Kitchens</h3>
+                        <p>Ergonomic Indian dry and wet kitchen setups, acrylic anti-scratch finishes, quartz countertops, and pull-out pantry towers.</p>
+                        <a href="#contact" class="service-link">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 2: Master Bedroom -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="assets/images/luxury_bedroom.png" alt="Luxury Master Bedroom" class="service-img">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-icon-box">
+                            <!-- Custom Bedroom Icon SVG -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                                <path d="M2 20v-8a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v8"/>
+                                <path d="M4 10V5a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v5"/>
+                                <line x1="2" y1="16" x2="22" y2="16"/>
+                                <line x1="6" y1="10" x2="6" y2="16"/>
+                                <line x1="18" y1="10" x2="18" y2="16"/>
+                            </svg>
+                        </div>
+                        <h3>Bespoke Bedrooms</h3>
+                        <p>Plush custom headboards, side-tables with integrated wireless chargers, elegant back-paneling, and ambient layout styling.</p>
+                        <a href="#contact" class="service-link">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 3: Living Rooms -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="assets/images/living_room_tv_unit.png" alt="Elegant Living Room Design" class="service-img">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-icon-box">
+                            <!-- Custom Living Icon SVG -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                                <path d="M4 21v-7a3 3 0 0 1 3-3h10a3 3 0 0 1 3 3v7"/>
+                                <rect x="2" y="14" width="20" height="3" rx="1"/>
+                                <path d="M12 11V7a2 2 0 0 0-2-2H7"/>
+                                <path d="M12 11V7a2 2 0 0 1 2-2h3"/>
+                            </svg>
+                        </div>
+                        <h3>Living Room Interiors</h3>
+                        <p>TV console back-panels with Italian marble veneer, custom lounge seating, luxury divider shelves, and statement lighting design.</p>
+                        <a href="#contact" class="service-link">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 4: Office Interiors -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="assets/images/home_office.png" alt="Modern Home Office" class="service-img">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-icon-box">
+                            <!-- Custom Office Icon SVG -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                                <rect x="3" y="7" width="18" height="13" rx="2"/>
+                                <path d="M16 21V7a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v14"/>
+                            </svg>
+                        </div>
+                        <h3>Workspace & Studies</h3>
+                        <p>Ergonomic desks, concealed cable management networks, profile-lit storage bookshelves, and acoustically insulated walls.</p>
+                        <a href="#contact" class="service-link">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 5: False Ceiling -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="assets/images/false_ceiling.png" alt="False Ceiling & Lighting" class="service-img">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-icon-box">
+                            <!-- Custom Ceiling Icon SVG -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                                <path d="M2 4h20M4 4v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V4"/>
+                                <path d="M9 10h6m-6 4h6"/>
+                            </svg>
+                        </div>
+                        <h3>False Ceiling & Lighting</h3>
+                        <p>Gypsum layered false ceilings, warm dimmable LED strip layouts, wooden rafters, and customized task-oriented lighting design.</p>
+                        <a href="#contact" class="service-link">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+
+                <!-- Service 6: Wardrobes -->
+                <div class="service-card">
+                    <div class="service-img-container">
+                        <img src="assets/images/wardrobe_design.png" alt="Premium Sliding Wardrobe" class="service-img">
+                    </div>
+                    <div class="service-details">
+                        <div class="service-icon-box">
+                            <!-- Custom Wardrobe Icon SVG -->
+                            <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="1.5" fill="none">
+                                <rect x="3" y="3" width="18" height="18" rx="2"/>
+                                <line x1="12" y1="3" x2="12" y2="21"/>
+                                <circle cx="9" cy="12" r="1"/>
+                                <circle cx="15" cy="12" r="1"/>
+                            </svg>
+                        </div>
+                        <h3>Sliding Wardrobes</h3>
+                        <p>Floor-to-ceiling heights, tinted bronze glass sliding shutters, interior motion sensor LEDs, and velvet-lined jewelry drawers.</p>
+                        <a href="#contact" class="service-link">Inquire Now &rarr;</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section class="portfolio-section" id="portfolio">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-tag">Our Projects</span>
+                <h2 class="section-title">Step Inside Our Premium Homes</h2>
+                <p class="section-subtitle">A showcase of modern aesthetics, custom craftsmanship, and warm space lighting tailored for elite Indian apartments.</p>
+            </div>
+
+            <!-- Portfolio Filter Buttons -->
+            <div class="portfolio-filters scroll-reveal">
+                <button class="filter-btn active" data-filter="all">All</button>
+                <button class="filter-btn" data-filter="living">Living Rooms</button>
+                <button class="filter-btn" data-filter="bedroom">Bedrooms</button>
+                <button class="filter-btn" data-filter="kitchen">Kitchens</button>
+                <button class="filter-btn" data-filter="office">Workspaces</button>
+            </div>
+
+            <!-- Portfolio Grid -->
+            <div class="portfolio-grid scroll-reveal">
+                <!-- Item 1: Living -->
+                <div class="portfolio-item" data-category="living">
+                    <img src="assets/images/living_room_tv_unit.png" alt="Premium Living Room Mumbai" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Living Room</span>
+                            <h3>The Grandeur Penthouse</h3>
+                            <p class="portfolio-loc">Worli, Mumbai</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 2: Kitchen -->
+                <div class="portfolio-item" data-category="kitchen">
+                    <img src="assets/images/modular_kitchen_dining.png" alt="Modern Kitchen Bangalore" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Modular Kitchen</span>
+                            <h3>The Walnut Slate Kitchen</h3>
+                            <p class="portfolio-loc">Whitefield, Bangalore</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 3: Bedroom -->
+                <div class="portfolio-item" data-category="bedroom">
+                    <img src="assets/images/luxury_bedroom.png" alt="Premium Bedroom Gurgaon" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Master Bedroom</span>
+                            <h3>The Oak Veneer Haven</h3>
+                            <p class="portfolio-loc">DLF Phase V, Gurgaon</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 4: Office -->
+                <div class="portfolio-item" data-category="office">
+                    <img src="assets/images/home_office.png" alt="Home Office Hyderabad" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Home Office</span>
+                            <h3>The Executive Suite</h3>
+                            <p class="portfolio-loc">Jubilee Hills, Hyderabad</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 5: False Ceiling / Living -->
+                <div class="portfolio-item" data-category="living">
+                    <img src="assets/images/false_ceiling.png" alt="False Ceiling Design Pune" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Ceiling & Lighting</span>
+                            <h3>The Rafters Living Lounge</h3>
+                            <p class="portfolio-loc">Koregaon Park, Pune</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Item 6: Wardrobe / Bedroom -->
+                <div class="portfolio-item" data-category="bedroom">
+                    <img src="assets/images/wardrobe_design.png" alt="Luxury Closets Chennai" class="portfolio-img">
+                    <div class="portfolio-overlay">
+                        <div class="portfolio-info">
+                            <span class="portfolio-cat">Walk-In Closet</span>
+                            <h3>The Bronze Glass Wardrobes</h3>
+                            <p class="portfolio-loc">Adyar, Chennai</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Why Choose Us Section -->
+    <section class="why-choose-us-section" id="why-choose-us">
+        <div class="container">
+            <div class="grid-2 align-center">
+                <div class="why-us-content scroll-reveal">
+                    <span class="section-tag">Why Cube Interiors</span>
+                    <h2 class="section-title">The Standards Of Luxury You Can Trust</h2>
+                    <p class="section-desc">We eliminate the typical stresses of home interior projects. With our modular precision engineering, transparent flat pricing, and expert designers, you get exactly what you visualize.</p>
+                    
+                    <div class="why-us-grid">
+                        <div class="why-us-item">
+                            <div class="why-us-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="2" fill="none">
+                                    <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"/>
+                                    <polyline points="22 4 12 14.01 9 11.01"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>No Hidden Charges</h4>
+                                <p>Get a fully transparent line-item quotation with detailed material breakdown.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-us-item">
+                            <div class="why-us-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="2" fill="none">
+                                    <circle cx="12" cy="12" r="10"/>
+                                    <path d="M12 8v4l3 3"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>45-Day Delivery Guarantee</h4>
+                                <p>We pay your rent if we delay the handover of your modular furniture package.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-us-item">
+                            <div class="why-us-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="2" fill="none">
+                                    <path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>10-Year Warranty</h4>
+                                <p>Premium grade BWR plywood and top-tier materials backed by decade-long warranty certificates.</p>
+                            </div>
+                        </div>
+
+                        <div class="why-us-item">
+                            <div class="why-us-icon-box">
+                                <svg viewBox="0 0 24 24" width="24" height="24" stroke="#D4AF37" stroke-width="2" fill="none">
+                                    <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+                                    <polyline points="14 2 14 8 20 8"/>
+                                    <line x1="16" y1="13" x2="8" y2="13"/>
+                                    <line x1="16" y1="17" x2="8" y2="17"/>
+                                    <polyline points="10 9 9 9 8 9"/>
+                                </svg>
+                            </div>
+                            <div>
+                                <h4>150+ Quality Audits</h4>
+                                <p>Strict multi-stage inspections spanning site preparation to final polish.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="why-us-visual scroll-reveal delay-1">
+                    <div class="visual-stack">
+                        <div class="visual-card bg-charcoal">
+                            <h3>100%</h3>
+                            <p>German Manufacturing Precision</p>
+                        </div>
+                        <div class="visual-card bg-gold">
+                            <h3>10+</h3>
+                            <p>Cities across India</p>
+                        </div>
+                        <img src="assets/images/modular_kitchen_dining.png" alt="Quality Checked Modular Cabinets" class="why-us-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Timeline Section -->
+    <section class="process-section" id="process">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-tag">Our Workflow</span>
+                <h2 class="section-title">The Roadmap To Your Dream Home</h2>
+                <p class="section-subtitle">We follow a transparent, seamless four-step pipeline to transform your architectural floor plans into reality.</p>
+            </div>
+
+            <div class="timeline scroll-reveal">
+                <!-- Step 1 -->
+                <div class="timeline-step">
+                    <div class="timeline-dot">01</div>
+                    <div class="timeline-content">
+                        <h3>Design Consultation</h3>
+                        <p>Meet our senior design experts. Walk through styles, finalize layouts, and explore interactive 3D floor plans with realistic materials.</p>
+                    </div>
+                </div>
+
+                <!-- Step 2 -->
+                <div class="timeline-step">
+                    <div class="timeline-dot">02</div>
+                    <div class="timeline-content">
+                        <h3>Detailed Renders & Quotes</h3>
+                        <p>Review photorealistic 3D visual mockups of your home. Finalize color palettes, veneers, hardware details, and review a transparent pricing quote.</p>
+                    </div>
+                </div>
+
+                <!-- Step 3 -->
+                <div class="timeline-step">
+                    <div class="timeline-dot">03</div>
+                    <div class="timeline-content">
+                        <h3>Precision Production</h3>
+                        <p>Your custom cabinets, wardrobes, and panels are manufactured inside our high-tech factory utilizing robotic panel saws and edge-banders.</p>
+                    </div>
+                </div>
+
+                <!-- Step 4 -->
+                <div class="timeline-step">
+                    <div class="timeline-dot">04</div>
+                    <div class="timeline-content">
+                        <h3>Installation & Handover</h3>
+                        <p>Our skilled, background-verified team arrives at your site. We install elements with micro-level precision and clean the site for your move-in.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials-section" id="testimonials">
+        <div class="container">
+            <div class="section-header text-center scroll-reveal">
+                <span class="section-tag">Client Reviews</span>
+                <h2 class="section-title">Loved By Premium Indian Homeowners</h2>
+                <p class="section-subtitle">Here is what our clients in Mumbai, Bangalore, and Delhi say about their design journeys with Cube Interiors.</p>
+            </div>
+
+            <div class="testimonials-grid scroll-reveal">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p class="testimonial-text">Cube Interiors transformed our 3 BHK flat in Whitefield into a minimalist luxury oasis. The modular kitchen is a dream—the soft-close channels and space organizer layout make it incredibly comfortable. They completed the work in exactly 43 days!</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">AS</div>
+                        <div>
+                            <h4>Amit & Sneha Sharma</h4>
+                            <span class="user-loc">Bangalore</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p class="testimonial-text">We wanted a classical-modern feel with warm light for our villa. The design team created gorgeous oak panels and false ceiling features that our guests absolutely adore. Best part is their absolute transparency in budgeting.</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">RM</div>
+                        <div>
+                            <h4>Rajesh Malhotra</h4>
+                            <span class="user-loc">Gurgaon</span>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card">
+                    <div class="quote-mark">“</div>
+                    <p class="testimonial-text">As an executive working from home, I needed a highly customized study space. Cube Interiors delivered a workspace with integrated profile lighting and hidden cable routes. Extremely clean and professional crew!</p>
+                    <div class="testimonial-user">
+                        <div class="user-avatar">PK</div>
+                        <div>
+                            <h4>Priya Krishnan</h4>
+                            <span class="user-loc">Chennai</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact & Lead Form Section -->
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="grid-2">
+                <div class="contact-info scroll-reveal">
+                    <span class="section-tag">Let's Create Together</span>
+                    <h2 class="section-title">Schedule A Free consultation With Our Experts</h2>
+                    <p class="section-desc">Receive a personalized 3D spatial layout, an estimated budget breakdown, and styling ideas free of charge.</p>
+                    
+
+
+                    <div class="whatsapp-prompt">
+                        <p>Prefer chatting on WhatsApp?</p>
+                        <a href="https://wa.me/918309773223?text=Hi%20Cube%20Interiors%2C%20I'm%20looking%20to%20get%20my%20home%20interiors%20done%20and%20would%20like%20to%20book%20a%20free%20consultation." target="_blank" rel="noopener noreferrer" class="btn-whatsapp">
+                            <!-- WhatsApp Icon -->
+                            <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+                                <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.489 0 9.953-4.437 9.956-9.897.002-2.644-1.025-5.131-2.893-7.001C16.569 1.835 14.09 1.8 11.45 1.8c-5.492 0-9.956 4.439-9.958 9.901-.001 1.704.475 3.364 1.378 4.793l-.997 3.646 3.774-.986zm11.238-7.793c-.3-.15-1.774-.875-2.048-.975-.274-.1-.474-.15-.674.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.492-.893-.797-1.496-1.78-1.672-2.08-.175-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.674-1.625-.924-2.225-.244-.588-.492-.51-.674-.52-.175-.01-.375-.012-.575-.012-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.494 1.707.632.718.228 1.372.196 1.888.118.577-.087 1.774-.725 2.023-1.425.249-.7.249-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/>
+                            </svg>
+                            Instant Chat on WhatsApp
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Contact Form Wrapper -->
+                <div class="contact-form-wrapper scroll-reveal delay-1">
+                    <form id="quoteForm" class="quote-form">
+                        <h3 class="form-title">Request Design Estimation</h3>
+                        <p class="form-subtitle">Fill in the details to speak with a design lead.</p>
+                        
+                        <div class="form-group">
+                            <label for="userName">Full Name *</label>
+                            <input type="text" id="userName" name="name" required placeholder="e.g., Aditya Sharma">
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="userPhone">Phone Number *</label>
+                                <input type="tel" id="userPhone" name="phone" required placeholder="e.g., 9876543210">
+                            </div>
+                            <div class="form-group">
+                                <label for="userEmail">Email Address</label>
+                                <input type="email" id="userEmail" name="email" placeholder="e.g., aditya@gmail.com">
+                            </div>
+                        </div>
+
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="projectType">Scope of Work</label>
+                                <select id="projectType" name="projectType">
+                                    <option value="full-home">Full Home Interior</option>
+                                    <option value="kitchen">Modular Kitchen Only</option>
+                                    <option value="bedroom">Bedroom / Wardrobes</option>
+                                    <option value="living">Living Room / TV Console</option>
+                                    <option value="office">Office / Commercial Space</option>
+                                    <option value="false-ceiling">False Ceiling & Lighting</option>
+                                </select>
+                            </div>
+                            <div class="form-group">
+                                <label for="budget">Approximate Budget</label>
+                                <select id="budget" name="budget">
+                                    <option value="3-5-lakhs">₹3 Lakhs - ₹5 Lakhs</option>
+                                    <option value="5-10-lakhs">₹5 Lakhs - ₹10 Lakhs</option>
+                                    <option value="10-15-lakhs">₹10 Lakhs - ₹15 Lakhs</option>
+                                    <option value="15-plus">₹15 Lakhs +</option>
+                                </select>
+                            </div>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userCity">City *</label>
+                            <select id="userCity" name="city" required>
+                                <option value="" disabled selected>Select your city</option>
+                                <option value="hyderabad">Hyderabad</option>
+                                <option value="bangalore">Bangalore</option>
+                                <option value="mumbai">Mumbai</option>
+                                <option value="delhi-ncr">Delhi NCR</option>
+                                <option value="chennai">Chennai</option>
+                                <option value="pune">Pune</option>
+                            </select>
+                        </div>
+
+                        <div class="form-group">
+                            <label for="userMessage">Message / Custom Requirements</label>
+                            <textarea id="userMessage" name="message" rows="3" placeholder="Tell us about your home (e.g. 3 BHK floorplan, modular requirements, handover timeline)..."></textarea>
+                        </div>
+
+                        <button type="submit" class="btn-gold-solid btn-full-width">Submit Form & Get Callback</button>
+                        
+                        <p class="form-disclaimer">* We respect your privacy. No spam. Only official callbacks from our senior designers.</p>
+                    </form>
+                    
+                    <!-- Success Modal Message (Hidden initially) -->
+                    <div id="formSuccessMessage" class="form-success-overlay">
+                        <div class="success-card">
+                            <div class="success-icon">
+                                <svg viewBox="0 0 24 24" width="48" height="48" stroke="#D4AF37" stroke-width="2" fill="none">
+                                    <polyline points="20 6 9 17 4 12"/>
+                                </svg>
+                            </div>
+                            <h3>Thank You!</h3>
+                            <p>Your design request has been received. One of our design coordinators will call you in the next 2 hours to schedule your free consult.</p>
+                            <button id="closeSuccessBtn" class="btn-gold-solid">Close Window</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="site-footer">
+        <div class="container footer-top">
+            <div class="footer-brand">
+                <div class="logo-wrapper">
+                    <!-- SVG logo copied -->
+                    <svg viewBox="0 0 100 100" width="36" height="36" xmlns="http://www.w3.org/2000/svg">
+                        <polygon points="50,12 80,29 50,46 20,29" fill="#D4AF37" opacity="0.8" />
+                        <polygon points="20,29 50,46 50,80 20,63" fill="#B08D26" />
+                        <polygon points="50,46 80,29 80,63 50,80" fill="#8C6E19" />
+                        <polygon points="50,32 64,40 50,48 36,40" fill="#FFA726" />
+                        <polygon points="36,40 50,48 50,64 36,56" fill="#FB8C00" />
+                        <polygon points="50,48 64,40 64,56 50,64" fill="#E05A00" />
+                        <polygon points="50,12 80,29 80,63 50,80 20,63 20,29" fill="none" stroke="#D4AF37" stroke-width="1.5"/>
+                    </svg>
+                    <div class="logo-text">
+                        <span class="brand-cube">CUBE</span>
+                        <span class="brand-interiors">INTERIORS</span>
+                    </div>
+                </div>
+                <p class="footer-tagline">Luxurious. Reliable. Functional. Making high-end modular designs accessible for modern homes.</p>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M9 8h-3v4h3v12h5v-12h3.642l.358-4h-4v-1.667c0-.955.192-1.333 1.115-1.333h2.885v-5h-3.808c-3.596 0-5.192 1.583-5.192 4.615v3.385z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="2" width="20" height="20" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                    <a href="#" aria-label="YouTube">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M23.498 6.163a3.003 3.003 0 0 0-2.11-2.108C19.528 3.545 12 3.545 12 3.545s-7.528 0-9.388.51a3.004 3.004 0 0 0-2.11 2.108C0 8.022 0 12 0 12s0 3.978.51 5.837a3.002 3.002 0 0 0 2.11 2.108c1.86.51 9.388.51 9.388.51s7.528 0 9.388-.51a3.003 3.003 0 0 0 2.11-2.108c.51-1.86.51-5.837.51-5.837s0-3.978-.51-5.837zM9.545 15.568V8.432L15.818 12l-6.273 3.568z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Pinterest">
+                        <svg viewBox="0 0 24 24" width="18" height="18" fill="currentColor"><path d="M12.017 0C5.396 0 .029 5.367.029 11.987c0 5.079 3.158 9.41 7.61 11.162-.105-.946-.199-2.385.041-3.412.219-.937 1.409-5.978 1.409-5.978s-.36-.719-.36-1.781c0-1.667.967-2.912 2.168-2.912 1.024 0 1.517.769 1.517 1.689 0 1.029-.656 2.57-.996 3.996-.283 1.195.599 2.169 1.777 2.169 2.133 0 3.772-2.249 3.772-5.495 0-2.873-2.064-4.882-5.012-4.882-3.414 0-5.418 2.561-5.418 5.207 0 1.031.397 2.138.893 2.738.098.119.112.224.083.345l-.333 1.36c-.053.22-.174.267-.402.161-1.499-.698-2.436-2.889-2.436-4.649 0-3.785 2.75-7.262 7.929-7.262 4.163 0 7.398 2.967 7.398 6.931 0 4.136-2.607 7.464-6.227 7.464-1.216 0-2.359-.631-2.75-1.378l-.748 2.853c-.271 1.043-1.002 2.35-1.492 3.146C9.57 23.812 10.763 24 12.017 24c6.62 0 11.988-5.367 11.988-11.987C24.005 5.367 18.637 0 12.017 0z"/></svg>
+                    </a>
+                </div>
+            </div>
+
+            <div class="footer-links">
+                <h3>Design Scope</h3>
+                <ul>
+                    <li><a href="#services">Modular Kitchens</a></li>
+                    <li><a href="#services">Living Rooms</a></li>
+                    <li><a href="#services">Master Bedrooms</a></li>
+                    <li><a href="#services">Home Offices</a></li>
+                    <li><a href="#services">False Ceilings</a></li>
+                    <li><a href="#services">Sliding Wardrobes</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-links">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About Our Studio</a></li>
+                    <li><a href="#portfolio">Our Portfolio</a></li>
+                    <li><a href="#why-choose-us">Quality Standards</a></li>
+                    <li><a href="#process">Our Working Process</a></li>
+                    <li><a href="#testimonials">Client Testimonials</a></li>
+                    <li><a href="#contact">Book Free Consultation</a></li>
+                </ul>
+            </div>
+
+
+        </div>
+
+        <div class="footer-bottom text-center">
+            <div class="container footer-bottom-flex">
+                <p>&copy; 2026 Cube Interiors. All Rights Reserved.</p>
+                <p>Designed by Pavan &bull; Made in India</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Floating Quick WhatsApp Button -->
+    <a href="https://wa.me/918309773223?text=Hi%20Cube%20Interiors%2C%20I'm%20looking%20to%20get%20my%20home%20interiors%20done%20and%20would%20like%20to%20book%20a%20free%20consultation." class="floating-whatsapp" target="_blank" rel="noopener noreferrer" aria-label="Chat with us on WhatsApp">
+        <svg viewBox="0 0 24 24" width="28" height="28" fill="currentColor">
+            <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946C.06 5.348 5.397.01 12.008.01c3.202.001 6.212 1.246 8.477 3.513 2.262 2.268 3.507 5.28 3.505 8.484-.004 6.657-5.34 11.997-11.953 11.997-2.005-.001-3.973-.502-5.724-1.455L0 24zm6.59-4.846c1.6.95 3.188 1.449 4.725 1.45 5.489 0 9.953-4.437 9.956-9.897.002-2.644-1.025-5.131-2.893-7.001C16.569 1.835 14.09 1.8 11.45 1.8c-5.492 0-9.956 4.439-9.958 9.901-.001 1.704.475 3.364 1.378 4.793l-.997 3.646 3.774-.986zm11.238-7.793c-.3-.15-1.774-.875-2.048-.975-.274-.1-.474-.15-.674.15-.2.3-.775.975-.95 1.175-.175.2-.35.225-.65.075-.3-.15-1.267-.467-2.414-1.492-.893-.797-1.496-1.78-1.672-2.08-.175-.3-.019-.462.13-.611.135-.135.3-.35.45-.525.15-.175.2-.3.3-.5.1-.2.05-.375-.025-.525-.075-.15-.674-1.625-.924-2.225-.244-.588-.492-.51-.674-.52-.175-.01-.375-.012-.575-.012-.2 0-.525.075-.8.375-.275.3-1.05 1.025-1.05 2.5s1.075 2.9 1.225 3.1c.15.2 2.11 3.224 5.112 4.521.714.309 1.272.494 1.707.632.718.228 1.372.196 1.888.118.577-.087 1.774-.725 2.023-1.425.249-.7.249-1.3.175-1.425-.075-.125-.275-.2-.575-.35z"/>
+        </svg>
+    </a>
+
+    <!-- JavaScript logic -->
+    <script src="main.js"></script>
+</body>
+</html>
